@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ Vero</title>
+  <style>
+    :root {
+      --background-color: #8B0000;
+      --button-bg: #ffffff;
+      --button-text: #000000;
+      --button-radius: 20px;
+      --button-width: 15vw;
+      --button-padding: 0.75rem 1rem;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--background-color);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .links a {
+      display: inline-block;
+      width: var(--button-width);
+      background-color: var(--button-bg);
+      color: var(--button-text);
+      text-decoration: none;
+      padding: var(--button-padding);
+      border-radius: var(--button-radius);
+      font-weight: 600;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .links a:hover {
+      background-color: #e0e0e0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .links a:active {
+      transform: translateY(1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #aaaaaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://djvero.com/images/logo.jpg" alt="DJ Vero Logo" class="avatar" />
+
+    <h1>DJ Vero</h1>
+
+    <div class="links">
+      <a href="https://www.instagram.com/djvero/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.mixcloud.com/djvero/" target="_blank" rel="noopener noreferrer">Mixcloud</a>
+      <a href="https://www.youtube.com/@djvero" target="_blank" rel="noopener noreferrer">YouTube</a>
+      <a href="https://open.spotify.com/artist/4PvIArh7yOwAPqTwMJeNA2?si=kvJAV3GfRsmTBu4OAX5J9w" target="_blank" rel="noopener noreferrer">Spotify</a>
+    </div>
+
+    <footer>&copy; 2025 DJ Vero</footer>
+  </div>
+</body>
+</html>
